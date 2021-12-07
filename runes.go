@@ -6,10 +6,6 @@ import (
     "os"
 )
 
-func pal() {
-
-    
-}
 
 func main(){
     text, _ := bufio.NewReader(os.Stdin).ReadString('\n')
@@ -18,15 +14,15 @@ func main(){
     for i:=0; i<len(rs);i++{
         if rs[i]==rs[len(rs)-1-i]{
                 k++
-            }else{
+        }else{
                 break
 
         }
     }
     if k==len(rs){
-    fmt.Print("Палиндром")
+         fmt.Print("Палиндром")
     }else{
-                fmt.Print("Нет")
+          fmt.Print("Нет")
     }
 
 }
